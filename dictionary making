@@ -1,0 +1,65 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> customer={'name':'sharon','balance':400}
+>>> customer1={'name':'sharon','balance':400}
+>>> customer2={'name':'eva','balance':2500}
+>>> customer3={'name':'mercy','balance':400}
+>>> customer4={'name':'aiman','balance':400}
+>>> customer5={'name':'naima','balance':400}
+>>> customers=[customer1,customer2,customer3,customer4,customer5]
+>>> customers
+[{'balance': 400, 'name': 'sharon'}, {'balance': 2500, 'name': 'eva'}, {'balance': 400, 'name': 'mercy'}, {'balance': 400, 'name': 'aiman'}, {'balance': 400, 'name': 'naima'}]
+>>> [{'balance': 400, 'name': 'sharon'}, {'balance': 2500, 'name': 'eva'}, {'balance': 400, 'name': 'mercy'}, {'balance': 400, 'name': 'aiman'}, {'balance': 400, 'name': 'naima'}]
+[{'balance': 400, 'name': 'sharon'}, {'balance': 2500, 'name': 'eva'}, {'balance': 400, 'name': 'mercy'}, {'balance': 400, 'name': 'aiman'}, {'balance': 400, 'name': 'naima'}]
+>>> for customer in customers:
+	sms='hi{},your balance is{}'.format(customer['name'],customer['balance']
+	print(sms)
+					    
+SyntaxError: invalid syntax (<pyshell#38>, line 3)
+>>> for customer in customers:
+	sms='hi{},your balance is{}'.format(customer['name'],customer['balance'])
+	print(sms)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#40>", line 2, in <module>
+    sms='hi{},your balance is{}'.format(customer['name'],customer['balance'])
+ValueError: zero length field name in format
+>>> ValueError: zero length field name in format
+SyntaxError: invalid syntax (<pyshell#41>, line 1)
+>>> 
+>>> sms
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    sms
+NameError: name 'sms' is not defined
+>>> customers
+[{'balance': 400, 'name': 'sharon'}, {'balance': 2500, 'name': 'eva'}, {'balance': 400, 'name': 'mercy'}, {'balance': 400, 'name': 'aiman'}, {'balance': 400, 'name': 'naima'}]
+>>> for customer in customers:
+	print(customer)
+
+	
+{'balance': 400, 'name': 'sharon'}
+{'balance': 2500, 'name': 'eva'}
+{'balance': 400, 'name': 'mercy'}
+{'balance': 400, 'name': 'aiman'}
+{'balance': 400, 'name': 'naima'}
+>>> for customer in customers:
+	sms='hi{},your balance is{}'.format(customer['name'],customer['balance'])
+	print(sms)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#49>", line 2, in <module>
+    sms='hi{},your balance is{}'.format(customer['name'],customer['balance'])
+ValueError: zero length field name in format
+>>> for customer in customers:
+	loan=customers['balance']/2.9
+	print(customers)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#53>", line 2, in <module>
+    loan=customers['balance']/2.9
+TypeError: list indices must be integers, not str
+>>> 

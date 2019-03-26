@@ -1,0 +1,51 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> 
+>>> 
+
+>>> 
+>>> 
+
+>>> c1=kenya
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    c1=kenya
+NameError: name 'kenya' is not defined
+>>> c1="kenya"
+>>> c2="uganda"
+>>> c3="tanzania"
+>>> ke_code="111"
+>>> ug_code="222"
+>>> tz_code="333"
+>>> print("{}code is {}"format(c1,ke_code))
+SyntaxError: invalid syntax (<pyshell#12>, line 1)
+>>> 
+>>> print("{} code is {}".format(c1,ke_code))
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    print("{} code is {}".format(c1,ke_code))
+ValueError: zero length field name in format
+>>> c1
+'kenya'
+>>> c2
+'uganda'
+>>> c3
+'tanzania'
+>>> ke_code
+'111'
+>>> ug_code
+'222'
+>>> tz_code
+'333'
+>>> print("{} code is {}".format(c1,ke_code))
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    print("{} code is {}".format(c1,ke_code))
+ValueError: zero length field name in format
+>>> print("{} code is {}".format(c1,ke_code))
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    print("{} code is {}".format(c1,ke_code))
+ValueError: zero length field name in format
+>>
