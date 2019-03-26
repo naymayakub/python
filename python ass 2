@@ -1,0 +1,22 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> fruits['apple','mango','watermelon','banana','cherry','piineaple','strawberry','orange','kiwi','papaya']
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    fruits['apple','mango','watermelon','banana','cherry','piineaple','strawberry','orange','kiwi','papaya']
+NameError: name 'fruits' is not defined
+>>> fruits=['apple','mango','watermelon','banana','cherry','piineaple','strawberry','orange','kiwi','papaya']
+>>> fruits
+['apple', 'mango', 'watermelon', 'banana', 'cherry', 'piineaple', 'strawberry', 'orange', 'kiwi', 'papaya']
+>>> k=dict()
+>>> for x in fruits:
+	k(x)=len(x)
+	
+SyntaxError: can't assign to function call (<pyshell#5>, line 2)
+>>> for x in fruits:
+	k[x]=len(x)
+
+	
+>>> print(k)
+{'kiwi': 4, 'piineaple': 9, 'papaya': 6, 'apple': 5, 'cherry': 6, 'strawberry': 10, 'mango': 5, 'watermelon': 10, 'orange': 6, 'banana': 6}
+>>> 

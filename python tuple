@@ -1,0 +1,314 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> a=(1,2,3,4)
+>>> b=('a','b','c','d')
+>>> b.append('e')
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    b.append('e')
+AttributeError: 'tuple' object has no attribute 'append'
+>>> for x in a:
+	print(x)
+
+	
+1
+2
+3
+4
+>>> for x in x:
+	print(y)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    for x in x:
+TypeError: 'int' object is not iterable
+>>> c=list(a)
+>>> c
+[1, 2, 3, 4]
+>>> d=[x for x in a]
+>>> d
+[1, 2, 3, 4]
+>>> a
+(1, 2, 3, 4)
+>>> f=a+b
+>>> f
+(1, 2, 3, 4, 'a', 'b', 'c', 'd')
+>>> a*3
+(1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4)
+>>> a
+(1, 2, 3, 4)
+>>> "b" in b
+True
+>>> "e" in b
+False
+>>> iin a
+SyntaxError: invalid syntax (<pyshell#20>, line 1)
+>>> i in a
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    i in a
+NameError: name 'i' is not defined
+>>> x=[1,2,3,4]
+>>> y=(x)
+>>> y
+[1, 2, 3, 4]
+>>> y=(z for z in x)
+>>> y
+<generator object <genexpr> at 0x0000000002ECFC18>
+>>> a=[1,2,3,1,4,2,5,3,7]
+>>> b=set(a)
+>>> b
+{1, 2, 3, 4, 5, 7}
+>>> c={"a","b","c","c"}
+>>> c
+{'a', 'c', 'b'}
+>>> d={'a','A','b','B'}
+>>> d
+{'A', 'a', 'B', 'b'}
+>>> d={'a','A','b','B','a','B'}
+>>> d
+{'a', 'A', 'B', 'b'}
+>>> s1={1,2,3,4}
+>>> s2={3,4,5,6}
+>>> s2.add(7)
+>>> s2
+{3, 4, 5, 6, 7}
+>>> s2.remove(7)
+>>> s2
+{3, 4, 5, 6}
+>>> s1.discard(4)
+>>> s1
+{1, 2, 3}
+>>> s1.discard(4)
+>>> s1
+{1, 2, 3}
+>>> s1.difference(s2)
+{1, 2}
+>>> s2.difference(s1)
+{4, 5, 6}
+>>> s1.intersection(s2)
+{3}
+>>> s2.union(s1
+	 s2
+	 
+SyntaxError: invalid syntax (<pyshell#50>, line 2)
+>>> s1
+{1, 2, 3}
+>>> s2.union(s1)
+{1, 2, 3, 4, 5, 6}
+>>> s1.union(s2)
+{1, 2, 3, 4, 5, 6}
+>>>  s1.extend(s2)
+ 
+SyntaxError: unexpected indent (<pyshell#54>, line 1)
+>>> s1.update({1,2,3})
+>>> s1
+{1, 2, 3}
+>>> s2.update({10,11,12})
+>>> s2
+{3, 4, 5, 6, 10, 11, 12}
+>>> coodes={'kenya',254,'uganda':256,'tanzania':255}
+SyntaxError: invalid syntax (<pyshell#59>, line 1)
+>>> coodes={'kenya':254,'uganda':256,'tanzania':255}
+>>> codes['kenya']
+Traceback (most recent call last):
+  File "<pyshell#61>", line 1, in <module>
+    codes['kenya']
+NameError: name 'codes' is not defined
+>>> codes['kenya']
+Traceback (most recent call last):
+  File "<pyshell#62>", line 1, in <module>
+    codes['kenya']
+NameError: name 'codes' is not defined
+>>> codes
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    codes
+NameError: name 'codes' is not defined
+>>> coodes={'kenya':254,'uganda':256,'tanzania':255}
+>>> codes={'kenya':254,'uganda':256,'tanzania':255}
+>>> codes['kenya']
+254
+>>> codes['rwanda']
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    codes['rwanda']
+KeyError: 'rwanda'
+>>> codes['rwanda']=252
+>>> codes
+{'kenya': 254, 'tanzania': 255, 'rwanda': 252, 'uganda': 256}
+>>> codes.pop('rwanda)
+	  
+SyntaxError: EOL while scanning string literal (<pyshell#70>, line 1)
+>>> codes.pop('rwanda')
+252
+>>> 
+>>> codes
+{'kenya': 254, 'tanzania': 255, 'uganda': 256}
+>>> codes.keys()
+<dict_keys object at 0x0000000002EDA6D8>
+>>> codes.values()
+<dict_values object at 0x0000000002EDA558>
+>>> for x in codes.keys():
+	print(x)
+
+	
+kenya
+tanzania
+uganda
+>>> for x in codes.values():
+	print(x)
+
+	
+254
+255
+256
+>>> m=dict()
+>>> m['a']=10
+>>> m['b']=20
+>>> m
+{'a': 10, 'b': 20}
+>>> range(0, 10)
+range(0, 10)
+>>> for x in a:
+	print(x)
+	y=[x*x for x in a]
+
+	
+1
+2
+3
+1
+4
+2
+5
+3
+7
+>>> y
+[1, 4, 9, 1, 16, 4, 25, 9, 49]
+>>> dict
+<class 'dict'>
+>>> range()
+Traceback (most recent call last):
+  File "<pyshell#92>", line 1, in <module>
+    range()
+TypeError: range expected 1 arguments, got 0
+>>> numbers.keys()
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    numbers.keys()
+NameError: name 'numbers' is not defined
+>>> number.key()
+Traceback (most recent call last):
+  File "<pyshell#94>", line 1, in <module>
+    number.key()
+NameError: name 'number' is not defined
+>>> x=dict
+>>> number.key()
+Traceback (most recent call last):
+  File "<pyshell#96>", line 1, in <module>
+    number.key()
+NameError: name 'number' is not defined
+>>> x=dict
+>>> x['a']=0
+Traceback (most recent call last):
+  File "<pyshell#98>", line 1, in <module>
+    x['a']=0
+TypeError: 'type' object does not support item assignment
+>>> x['a']=0
+Traceback (most recent call last):
+  File "<pyshell#99>", line 1, in <module>
+    x['a']=0
+TypeError: 'type' object does not support item assignment
+>>> numbers
+Traceback (most recent call last):
+  File "<pyshell#100>", line 1, in <module>
+    numbers
+NameError: name 'numbers' is not defined
+>>> k['a']=10
+Traceback (most recent call last):
+  File "<pyshell#101>", line 1, in <module>
+    k['a']=10
+NameError: name 'k' is not defined
+>>> k=dict()
+>>> k=['a']=0
+SyntaxError: can't assign to literal (<pyshell#103>, line 1)
+>>> k=['a']=10
+SyntaxError: can't assign to literal (<pyshell#104>, line 1)
+>>> k=[1]=0
+SyntaxError: can't assign to literal (<pyshell#105>, line 1)
+>>> k=['key']=0
+SyntaxError: can't assign to literal (<pyshell#106>, line 1)
+>>> k=dict()
+>>> k[0]=0*0
+>>> k
+{0: 0}
+>>> k=dict()
+>>> for l in range(10):
+	k[l]=l*l
+
+	
+>>> 
+>>> print()
+
+>>> 
+>>> print(k)
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+>>> fruits={'melon','apple','orange','pineapple','pear','watermelon','passion','banana','avocado','kiwi'}
+>>> for x in fruits:
+	print(x)
+
+	
+kiwi
+apple
+pear
+avocado
+melon
+passion
+pineapple
+orange
+watermelon
+banana
+>>> m=dict()
+>>> for x in fruits
+SyntaxError: invalid syntax (<pyshell#124>, line 1)
+>>> for x in fruits:
+	m[x]='melon'
+	print(m)
+
+	
+{'kiwi': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon'}
+{'kiwi': 'melon', 'pear': 'melon', 'apple': 'melon'}
+{'kiwi': 'melon', 'avocado': 'melon', 'pear': 'melon', 'apple': 'melon'}
+{'kiwi': 'melon', 'avocado': 'melon', 'pear': 'melon', 'apple': 'melon', 'melon': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'passion': 'melon', 'melon': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon'}
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+>>> m
+{'kiwi': 'melon', 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+>>> for x in fruits:
+	m[x]='len print(m)
+	
+SyntaxError: EOL while scanning string literal (<pyshell#130>, line 2)
+>>> for x in fruits:
+	m[x]=len(x)
+	print(m)
+
+	
+{'kiwi': 4, 'apple': 'melon', 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 'melon', 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 'melon', 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 'melon', 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 'melon', 'passion': 'melon', 'pineapple': 'melon', 'melon': 5, 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 'melon', 'passion': 7, 'pineapple': 'melon', 'melon': 5, 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 'melon', 'passion': 7, 'pineapple': 9, 'melon': 5, 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 6, 'passion': 7, 'pineapple': 9, 'melon': 5, 'watermelon': 'melon', 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 6, 'passion': 7, 'pineapple': 9, 'melon': 5, 'watermelon': 10, 'banana': 'melon'}
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 6, 'passion': 7, 'pineapple': 9, 'melon': 5, 'watermelon': 10, 'banana': 6}
+>>> m
+{'kiwi': 4, 'apple': 5, 'pear': 4, 'avocado': 7, 'orange': 6, 'passion': 7, 'pineapple': 9, 'melon': 5, 'watermelon': 10, 'banana': 6}
+>>> 

@@ -1,0 +1,39 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> flat=[[1,2,3][4,5,6][7,8,9]]
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    flat=[[1,2,3][4,5,6][7,8,9]]
+TypeError: list indices must be integers, not tuple
+>>> flat=[[1,2,3],[4,5,6],[7,8,9]]
+>>> m[]
+SyntaxError: invalid syntax (<pyshell#2>, line 1)
+>>> m=[]
+>>> for x in l:
+	for z in x
+	
+SyntaxError: invalid syntax (<pyshell#5>, line 2)
+>>> for x in l:
+	for z in x:
+		m.append(z)
+
+		
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    for x in l:
+NameError: name 'l' is not defined
+>>> lists=([1,2,3,4,5,6,7,8,9])
+>>> for m in nested:
+	flat.append(m)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    for m in nested:
+NameError: name 'nested' is not defined
+>>> lists
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> m=[k*k for k in lists]
+>>> m
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 

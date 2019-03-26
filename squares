@@ -1,0 +1,210 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> del hello():
+	
+SyntaxError: invalid syntax (<pyshell#0>, line 1)
+>>> del hello():
+	
+SyntaxError: invalid syntax (<pyshell#1>, line 1)
+>>> def hello():
+	print("hello Akirachix")
+
+	
+>>> hello()
+hello Akirachix
+>>> 
+>>> def hello(name):
+	print("hello {}".format(name))
+
+	
+>>> hello("naima")
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    hello("naima")
+  File "<pyshell#9>", line 2, in hello
+    print("hello {}".format(name))
+ValueError: zero length field name in format
+>>> def hello(name):
+	print("hello {}".format(name))
+
+	
+>>> hello
+<function hello at 0x0000000002EE61C8>
+>>> hello ("naima")
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    hello ("naima")
+  File "<pyshell#12>", line 2, in hello
+    print("hello {}".format(name))
+ValueError: zero length field name in format
+>>> def sum(a,b):
+	answer=a+b
+	return answer
+
+>>> sum(10,15)
+25
+>>> sum(100,1000)
+1100
+>>> sum(10)
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    sum(10)
+TypeError: sum() takes exactly 2 positional arguments (1 given)
+>>> def division(a,b):
+	answer=a/b
+	return answer
+
+>>> division(30,2)
+15.0
+>>> division(50,10)
+5.0
+>>> def multiply(a,b):
+	answer=a*b
+	return answer
+
+>>> multiply(30,2)
+60
+>>> def subtraction(a,b):
+	answer=a-b
+	return answer
+
+>>> subtraction(10,5)
+5
+>>> def module(a,b):
+	answer=a%b
+	return answer
+
+>>> def modulus(a,b):
+	answer=a%b
+	return answer
+
+>>> modulus(99,10)
+9
+>>> modulus(33,10)
+3
+>>> hello("naima")
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    hello("naima")
+  File "<pyshell#12>", line 2, in hello
+    print("hello {}".format(name))
+ValueError: zero length field name in format
+>>> func-name("aisha",1998)
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    func-name("aisha",1998)
+NameError: name 'func' is not defined
+>>> def subtract(a,b):
+	answer=("hello james you are {}years old.format(subtact)")
+
+	
+>>> def subtract(a,b):
+	answer=("hello james you are {}years old.format(subtact)")
+	return answer
+
+>>> subtract (2019,2000)
+'hello james you are {}years old.format(subtact)'
+>>> anwer
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    anwer
+NameError: name 'anwer' is not defined
+>>> print
+<built-in function print>
+>>> age("aisha",2000)
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    age("aisha",2000)
+NameError: name 'age' is not defined
+>>> age("aisha",1998)
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    age("aisha",1998)
+NameError: name 'age' is not defined
+>>> def age(name,yob):
+	age=2019-2000
+	print("hello{}, you are {} years old".format(name,age))
+
+	
+>>> print
+<built-in function print>
+>>> def age(name,yob):
+	x=2019-2000
+	print("hello{}, you are {} years old".format(name,x))
+
+	
+>>> print():
+	
+SyntaxError: invalid syntax (<pyshell#65>, line 1)
+>>> x=[1,2,3,4,5]
+>>> y=[100,200,300,400]
+>>> square(x)
+Traceback (most recent call last):
+  File "<pyshell#68>", line 1, in <module>
+    square(x)
+NameError: name 'square' is not defined
+>>> def squares(numbers)
+SyntaxError: invalid syntax (<pyshell#69>, line 1)
+>>> def squares(numbers):
+	for number in numbers:
+		print(number*number)
+
+		
+>>> square(x)
+Traceback (most recent call last):
+  File "<pyshell#74>", line 1, in <module>
+    square(x)
+NameError: name 'square' is not defined
+>>> def squares(numbers):
+	for number in numbers:
+		print(number*number)
+
+		
+>>> x=[1,2,3,4,5]
+>>> y=[100,200,300,400]
+>>> square(x)
+Traceback (most recent call last):
+  File "<pyshell#79>", line 1, in <module>
+    square(x)
+NameError: name 'square' is not defined
+>>> squares(x)
+1
+4
+9
+16
+25
+>>> squares(y)
+10000
+40000
+90000
+160000
+>>> 
+>>> def squares(numbers):
+	a=[]
+	for number in numbers:
+		s=numbers*10
+		a.append(s)
+		return a
+
+	
+>>> x=[1,2,3,4,5]
+>>> y=[100,200,300,400]
+>>> tens(x)
+Traceback (most recent call last):
+  File "<pyshell#92>", line 1, in <module>
+    tens(x)
+NameError: name 'tens' is not defined
+>>> x=[1,2,3,4,5]
+>>> def squares(numbers):
+	a=[]
+	for number in numbers:
+		s=numbers*10
+		a.append(s)
+		return a
+
+	
+>>> x=[1,2,3,4,5]
+>>> y=[100,200,300,400]
+>>> squares(x)
+[[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]]
+>>> 
